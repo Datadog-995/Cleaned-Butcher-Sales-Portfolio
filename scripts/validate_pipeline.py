@@ -8,26 +8,40 @@ def run_audit(df):
     missing = df.isnull().sum()
     print("\nMissing Values:")
     print(missing[missing > 0])
-    
+
     # 2. Duplicate Rows
     duplicates = df.duplicated().sum()
     print(f"\nDuplicate Rows: {duplicates}")
-    
+
     # 3. Data Types Check
     print("\nData Types:")
     print(df.dtypes)
-    
+
     # 4. Numerical Outliers (Simple Z-score check)
     numerical_cols = df.select_dtypes(include=[np.number]).columns
     for col in numerical_cols:
         z_scores = np.abs((df[col] - df[col].mean()) / df[col].std())
         outliers = (z_scores > 3).sum()
         if outliers > 0:
-            print(f"Outliers in {col}: {outliers}")
+            print(f"Found {outliers} outliers in {col}")
+
+    # 5. Handling Missing Dates
+    if 'Date' in df.columns:
+        mask = df['Date'].isna()
+        if 'Audit Notes' not in df.columns:
+            df['Audit Notes'] = ''
+        df.loc[mask, 'Audit Notes'] = df.loc[mask, 'Audit Notes'].apply(
+            lambda x: (str(x) + ' | ' if x and str(x).strip() else '') + '🚨 Missing Date - Flagged for Review'
+        )
 
 if __name__ == "__main__":
-    try:
-        data = pd.read_csv('CLEANED-butcher-sales-dirty-4000-CLEANED VERSION -EN-csv.csv')
-        run_audit(data)
-    except FileNotFoundError:
-        print("Dataset not found.")
+    # Example usage (simplified for simulation)
+    data = {
+        'Date': ['2023-01-01', None, '2023-01-03'],
+        'Sales': [100, 200, 150],
+        'Audit Notes': ['', '', '']
+    }
+    df = pd.DataFrame(data)
+    run_audit(df)
+    print("\nFinal DataFrame:")
+    print(df)
