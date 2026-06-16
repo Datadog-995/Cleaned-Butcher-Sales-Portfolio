@@ -1,7 +1,9 @@
 # data--quality--portfolio
+
 crm data audit & cleaning portfolio using Python Pandas, Openrefine ,and Google Sheets .
 
 ## Butcher Shop Sales Data Transformation
+
 Demonstrating data cleaning and enrichment for the butcher shop sales dataset.
 
 ### Data Comparison: Before vs After
@@ -26,5 +28,12 @@ Demonstrating data cleaning and enrichment for the butcher shop sales dataset.
 6. **Conditional Total Sales Calculation:** `if(isNull(value), cells["Price"].value * cells["Quantity"].value, value)` - Dynamically populates missing Total Sales values only when the cell is empty, using the product of Price and Quantity.
 7. **Currency Character Removal:** `value.replace("$", "").replace(",", "")` - Strips non-numeric characters from price strings to allow for mathematical operations.
 8. **Numeric Type Conversion:** `value.toNumber()` - Casts string-based currency values into numeric formats for calculation.
-9. **Currency Re-formatting:** ` "$" + value.format("%.2f")` - Restores the currency symbol and ensures two-decimal place precision for financial reporting.
+9. **Currency Re-formatting:** `"$ " + value.format("%.2f")` - Restores the currency symbol and ensures two-decimal place precision for financial reporting.
 10. **Audit Note Generation:** `if(cells["Total Sales"].value == null, "Calculated missing Total Sales", "Verified")` - Flagging rows where transformations were applied for audit transparency.
+
+## Business Impact & ROI Analysis
+
+By implementing automated data quality audits, the organization can achieve:
+- **Reduced Operational Costs:** Minimizing manual data cleaning efforts.
+- **Improved Decision Making:** Providing high-integrity data for executive reporting.
+- **Risk Mitigation:** Identifying and correcting errors before they affect downstream pipelines.
