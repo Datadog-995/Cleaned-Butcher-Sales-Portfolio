@@ -8,15 +8,14 @@ Demonstrating data cleaning and enrichment for the butcher shop sales dataset.
 
 ### Data Comparison: Before vs After
 
-**Before (Raw Uncleaned Data)**
-| Date | Store | Product | Price | Quantity | Total Sales |
-|---|---|---|---|---|---|
-| 2025-12-30 | The Little Bull | Skirt Steak | $105.09 | 3 | |
-
-**After (Cleaned Data)**
-| Date | Store | Product | Price | Quantity | Total Sales | Audit Notes |
-|---|---|---|---|---|---|---|
-| 2025-12-30 | The Little Bull | Skirt Steak | $105.09 | 3 | $315.27 | Calculated missing Total Sales |
+| Data Quality Category | State | Date | Store | Product | Price | Qty | Total Sales | Audit Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **1. Mathematical & Financial Reconciliation** | Raw | 2025-12-30 | The Little Bull | Skirt Steak | $105.09 | 3 | | |
+| | Cleaned | 2025-12-30 | The Little Bull | Skirt Steak | $105.09 | 3 | $315.27 | Calculated missing Total Sales |
+| **2. Missing Structural Data** | Raw | 2025-12-31 | Unknown | Ribeye | $85.00 | 2 | $170.00 | |
+| | Cleaned | 2025-12-31 | Happy Cow | Ribeye | $85.00 | 2 | $170.00 | Resolved 'Unknown' store |
+| **3. Schema & Syntax Standardization** | Raw | 2026-01-01 |  butcher shop  | filet mignon | $50.00 | 1 | $50.00 | |
+| | Cleaned | 2026-01-01 | Butcher Shop | Filet Mignon | $50.00 | 1 | $50.00 | Standardized casing & spaces |
 
 ### Detailed Step-by-Step Data Transformation Breakdown
 
