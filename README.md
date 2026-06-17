@@ -1,4 +1,27 @@
-# data--quality--portfolio
+# Retail Data Integrity & Quality Engineering Pipeline
+
+## 📊 Business Case & Project Overview
+In retail operations, messy transactional data can severely skew revenue forecasting, supply chain planning, and financial audits. This portfolio project showcases a production-ready data cleaning and validation pipeline built to ingest, audit, and clean an unformatted retail dataset containing **3,600+ historical butcher shop transactions**.
+
+The primary objective was to transform raw, anomaly-ridden CSV text into a reliable database asset by programmatically isolating structural errors, enforcing data types, and flagging missing operational audit checkpoints.
+
+---
+
+## 🛠️ Technical Stack & Tools
+* **Python (Pandas):** Engineered the core automated data validation masks and conditional flagging architecture.
+* **OpenRefine (JSON Architecture):**基因 Generated structural mapping arrays used during the initial mass schema restructuring, string alignment, and whitespace trimming.
+* **Google Colab:** Used as an interactive notebook environment for step-by-step pipeline execution and analysis.
+* **GitHub:** Maintained version control and hosted the public-facing interactive data assets for client review.
+
+---
+
+## 🚀 Data Quality Rules Enforced
+
+### 1. Automated Anomaly Tracking (Boolean Masking)
+Instead of drop-deleting critical financial transactions that were missing operational dates—which would result in unrecorded revenue—the pipeline applies a custom Python Boolean mask to isolate empty or null values:
+```python
+missing_date_mask = df['Date'].isna() | (df['Date'].astype(str).str.strip() == '')
+df.loc[missing_date_mask, 'Audit Notes'] = '🚨 Missing Date - Flagged for Review'# data--quality--portfolio
 
 crm data audit & cleaning portfolio using Python Pandas, Openrefine ,and Google Sheets .
 
