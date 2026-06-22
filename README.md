@@ -3,7 +3,7 @@
 To provide full visibility into this data audit and cleaning lifecycle, please follow this step-by-step roadmap:
 
 * **Step 1: Inspect the Full Dataset (100k+ Rows)** – Due to the large volume of production records, the interactive cleaning sandbox is hosted externally.
-    * 👉 [Access the Interactive Google Sheets Sandbox](https://github.com/Datadog-995/Cleaned-Butcher-Sales-Portfolio/commit/27a3262b179b5d830e3c28a8780efb2ecad1656f) *(Review the 'Before' and 'After' tabs to see structural transformations).*
+    * 👉 [Access the Interactive Google Sheets Sandbox](https://docs.google.com/spreadsheets/d/12dPNYDKRLjWn3hQruQNvAbuJ9qVUmFiw_45jtcc-fhA/edit?usp=sharing)*(Review the 'Before' and 'After' tabs to see structural transformations).*
 * **Step 2: Review Technical Rules & Scope** – Scroll down this page to view the explicit data validation criteria, schema enforcement rules, and business case.
 * **Step 3: View the Programmatic Pipeline** – Open the [`Cleaned-Butcher_sales.ipynb`](Cleaned-Butcher_sales.ipynb) notebook in this repository to review the Python/Pandas code that automates these checks.
 
