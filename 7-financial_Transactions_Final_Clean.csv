@@ -1,0 +1,26 @@
+Transaction_ID,Transaction_Date,Date_Audit_Status,Customer_ID,Customer_ID_Audit_Status,Product_Name,Quantity,Quantity Audit Check,Transaction_Type,Price,Price_Audit_Check,Price Audit Check,Payment_Method,Transaction_Status,Business Rule Check,Price_Imputed,Quantity_Imputed
+T00001,2024-08-02,Valid,C2205,Valid,Headphones,-5.0,Valid Return,Return,420.0,Valid,Valid,PayPal,Requires Review,Valid Ledger Row,Original,Original
+T00002,2020-02-10,Valid,C3156,Valid,Coffee Machine,469.0,Valid,Sale,445.0,Negative Price (Flipped to Positive),Valid,Credit Card,Pending,Valid Ledger Row,Original,Original
+T00003,,Invalid Date,C2919,Valid,Tablet,-4.0,Valid Return,Return,811.0,Valid,Valid,Credit Card,Completed,Valid Return Ledger,Original,Original
+T00004,2020-08-17,Valid,C3009,Valid,Tablet,-7.0,Valid Return,Return,869.0,Valid,Valid,PayPal,Pending,Valid Ledger Row,Original,Original
+T00005,,Invalid Date,C3488,Valid,Coffee Machine,-10.0,Valid Return,Return,763.0,Negative Price (Flipped to Positive),Valid,PayPal,Completed,Valid Return Ledger,Original,Original
+T00006,2021-10-26,Valid,C4241,Valid,Smartphones,598.0,Valid,Sale,95.0,Valid,Blank,PayPal,Completed,Valid Ledger Row,Imputed (Product Median),Original
+T00007,,Blank,C1313,Valid,Laptop,10.0,Valid,Sale,503.0,Valid,Blank,Credit Card,Completed,Valid Ledger Row,Imputed (Product Median),Original
+T00008,,Invalid Date,C4736,Valid,Headphones,669.0,Valid,Sale,87.0,Negative Price (Flipped to Positive),Valid,Cash,Requires Review,Valid Ledger Row,Original,Original
+T00009,,Blank,C3387,Valid,Tablet,10.0,Valid,Sale,462.0,Valid,Valid,PayPal,Requires Review,Valid Ledger Row,Original,Original
+T00010,,Invalid Date,C2846,Valid,Laptop,-1.0,Valid Return,Return,405.0,Valid,Valid,Credit Card,Pending,Valid Ledger Row,Original,Original
+T00011,,Invalid Date,C1004,Valid,Laptop,10.0,Valid,Sale,601.0,Negative Price (Flipped to Positive),Valid,PayPal,Completed,Valid Ledger Row,Original,Original
+T00012,,Invalid Date,C2912,Valid,Tablet,608.0,Valid,Sale,734.0,Valid,Blank,PayPal,Completed,Valid Ledger Row,Imputed (Product Median),Original
+T00013,2020-03-18,Valid,C1692,Valid,Smartphones,564.0,Valid,Sale,95.0,Valid,Blank,Cash,Completed,Valid Ledger Row,Imputed (Product Median),Original
+T00014,2020-06-19,Valid,C2992,Valid,Coffee Machine,696.0,Valid,Sale,906.0,Valid,Valid,Credit Card,Failed,Valid Ledger Row,Original,Original
+T00015,,Invalid Date,C3879,Valid,Headphones,-2.0,Valid Return,Return,524.0,Valid,Valid,Credit Card,Pending,Valid Ledger Row,Original,Original
+T00016,,Invalid Date,C2837,Valid,Laptop,-3.0,Valid Return,Return,503.0,Valid,Blank,Credit Card,Pending,Valid Ledger Row,Imputed (Product Median),Original
+T00017,2020-07-07,Valid,C3776,Valid,Smartphones,236.0,Valid,Sale,95.0,Negative Price (Flipped to Positive),Valid,Credit Card,Pending,Valid Ledger Row,Original,Original
+T00018,,Invalid Date,C0847,Malformed (Auto-Fixed),Coffee Machine,7.0,Valid,Sale,108.0,Negative Price (Flipped to Positive),Valid,Credit Card,Completed,Valid Ledger Row,Original,Original
+T00019,2024-02-19,Valid,C4871,Valid,Smartphones,400.0,Blank,Sale,95.0,Valid,Blank,PayPal,Pending,,Imputed (Product Median),Imputed (Product Median)
+T00020,,Invalid Date,C1924,Valid,Headphones,-6.0,Valid Return,Return,420.0,Valid,Blank,PayPal,Requires Review,Valid Ledger Row,Imputed (Product Median),Original
+T00021,,Invalid Date,C1137,Valid,Coffee Machine,856.0,Valid,Sale,489.0,Negative Price (Flipped to Positive),Valid,Credit Card,Failed,Valid Ledger Row,Original,Original
+T00022,,Invalid Date,C3883,Valid,Smartphones,9.0,Valid,Sale,95.0,Valid,Blank,Credit Card,Completed,Valid Ledger Row,Imputed (Product Median),Original
+T00023,,Invalid Date,C4877,Valid,Tablet,538.0,Valid,Sale,734.0,Negative Price (Flipped to Positive),Valid,PayPal,Completed,Valid Ledger Row,Original,Original
+T00024,2023-11-03,Valid,C0828,Malformed (Auto-Fixed),Coffee Machine,487.0,Valid,Sale,489.0,Valid,Blank,Cash,Requires Review,Valid Ledger Row,Imputed (Product Median),Original
+T00025,2022-11-18,Valid,C4985,Valid,Tablet,114.0,Valid,Sale,277.0,Valid,Valid,PayPal,Requires Review,Valid Ledger Row,Original,Original
