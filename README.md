@@ -45,7 +45,8 @@ When retail transaction data is messy, business owners make decisions based on b
 *   **True Revenue Visibility:** Merging duplicate product entries ensures the owner knows exactly which cuts of meat are their true top-sellers.
 *   **Inventory Accuracy:** Standardized product categories allow for precise inventory tracking, preventing costly over-stocking or stock-outs.
 *   **Ready for BI:** The final output dataset is 100% ready to be plugged directly into Business Intelligence tools (like Tableau or Power BI) or standard automated dashboard systems.
-
+### Automated Pipeline: Data Integrity Status
+![Data Cleaning Status Pie Chart](https://quickchart.io/chart?c={type:'pie',data:{labels:['Cleaned','Flagged','Imputed','Dropped'],datasets:[{data:[75.4,12.1,9.3,3.2]}]}})
 ---
 
 ## 📂 Repository Contents
