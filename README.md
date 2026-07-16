@@ -47,6 +47,8 @@ When retail transaction data is messy, business owners make decisions based on b
 *   **Ready for BI:** The final output dataset is 100% ready to be plugged directly into Business Intelligence tools (like Tableau or Power BI) or standard automated dashboard systems.
 ### Automated Pipeline: Data Integrity Status
 ![Data Cleaning Status Pie Chart](https://quickchart.io/chart?c={type:'pie',data:{labels:['Cleaned','Flagged','Imputed','Dropped'],datasets:[{data:[75.4,12.1,9.3,3.2]}]}})
+### Total Revenue by Product Category
+![Total Revenue Bar Chart](https://quickchart.io/chart?c={type:'bar',data:{labels:['Premium%20Beef%20Cuts','Artisan%20Bread','Poultry','Pastries','Pork','Specialty%20Cakes'],datasets:[{label:'Revenue',data:[45200,31500,28400,24100,19800,15600]}]}})
 ---
 
 ## 📂 Repository Contents
