@@ -29,6 +29,17 @@ The pipeline (`ecommerce_etl_pipeline.py`) utilizes **Python (Pandas, NumPy)** a
 ## Technologies Used
 *   **Python:** Pandas, NumPy, argparse
 *   **Database:** SQLite3
+
+*   ## 📊 Data Visualizations
+
+### 1. Total Revenue by Product Category
+![Total Revenue by Product](revenue_by_product.png)
+
+### 2. Transaction Volume by Payment Method
+![Transactions by Payment Method](payment_methods.png)
+
+### 3. Monthly Sales Trends
+![Monthly Sales Trends](monthly_sales_trend.png)
 *   **Environment:** Jupyter Notebook / Google Colab / macOS Terminal
 
 ## How to Run the Pipeline
@@ -36,3 +47,75 @@ To execute this pipeline on your local machine, run the following command in you
 
 ```bash
 python ecommerce_etl_pipeline.py --input "dirty-cafe-sales-csv (2).csv"
+---
+
+## 📊 Data Visualizations (Built from Cleaned Data)
+
+By automating the data cleaning pipeline, we are now able to generate reliable business intelligence. Below are key insights derived from the fully validated `cafe_sales` database table.
+
+### 1. Total Revenue by Product Category
+The cleaning pipeline ensured that price and quantity metrics were standardized, and missing "Total Spent" calculations were rectified, enabling an accurate revenue breakdown by item.
+
+![Total Revenue by Product](revenue_by_product.png)
+
+### 2. Transaction Volume by Payment Method
+System-generated "UNKNOWN" and "ERROR" flags in the payment field were converted to proper database-native Null values, providing a clean count of used payment methods.
+
+![Transactions by Payment Method](payment_methods.png)
+
+### 3. Monthly Sales Trends
+The `Transaction Date` column was normalized into standard datetime objects, which allows for reliable time-series analysis and the identification of seasonal trends.
+---
+
+## 📊 Data Visualizations (Built from Cleaned Data)
+
+By automating the data cleaning pipeline, we are now able to generate reliable business intelligence. Below are key insights derived from the fully validated `cafe_sales` database table.
+
+### 1. Total Revenue by Product Category
+The cleaning pipeline ensured that price and quantity metrics were standardized, and missing "Total Spent" calculations were rectified, enabling an accurate revenue breakdown by item.
+
+![Total Revenue by Product](revenue_by_product.png)
+
+### 2. Transaction Volume by Payment Method
+System-generated "UNKNOWN" and "ERROR" flags in the payment field were converted to proper database-native Null values, providing a clean count of used payment methods.
+
+![Transactions by Payment Method](payment_methods.png)
+
+### 3. Monthly Sales Trends
+The `Transaction Date` column was normalized into standard datetime objects, which allows for reliable time-series analysis and the identification of seasonal trends.
+---
+
+
+By automating the data cleaning pipeline, we are now able to generate reliable business intelligence. Below are key insights derived from the fully validated `cafe_sales` database table.
+
+### 1. Total Revenue by Product Category
+The cleaning pipeline ensured that price and quantity metrics were standardized, and missing "Total Spent" calculations were rectified, enabling an accurate revenue breakdown by item.
+
+![Total Revenue by Product](revenue_by_product.png)
+
+### 2. Transaction Volume by Payment Method
+System-generated "UNKNOWN" and "ERROR" flags in the payment field were converted to proper database-native Null values, providing a clean count of used payment methods.
+
+![Transactions by Payment Method](payment_methods.png)
+
+### 3. Monthly Sales Trends
+The `Transaction Date` column was normalized into standard datetime objects, which allows for reliable time-series analysis and the identification of seasonal trends.
+---
+
+
+By automating the data cleaning pipeline, we are now able to generate reliable business intelligence. Below are key insights derived from the fully validated `cafe_sales` database table.
+
+### 1. Total Revenue by Product Category
+The cleaning pipeline ensured that price and quantity metrics were standardized, and missing "Total Spent" calculations were rectified, enabling an accurate revenue breakdown by item.
+
+![Total Revenue by Product](revenue_by_product.png)
+
+### 2. Transaction Volume by Payment Method
+System-generated "UNKNOWN" and "ERROR" flags in the payment field were converted to proper database-native Null values, providing a clean count of used payment methods.
+
+![Transactions by Payment Method](payment_methods.png)
+
+### 3. Monthly Sales Trends
+The `Transaction Date` column was normalized into standard datetime objects, which allows for reliable time-series analysis and the identification of seasonal trends.
+
+![Monthly Sales Trends](monthly_sales_trend.png)
